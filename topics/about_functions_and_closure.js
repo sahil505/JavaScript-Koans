@@ -7,14 +7,14 @@ test("defining functions directly", function() {
         result = "b";
     };
     changeResult();
-    equal(__, result, 'what is the value of result?');
+    equal("a", result, 'what is the value of result?');
 });
 
 test("assigning functions to variables", function() {
     var triple = function(input) {
         return input * 3;
     };
-    equal(__, triple(4), 'what is triple 4?');
+    equal(12, triple(4), 'what is triple 4?');
 });
 
 test("self invoking functions", function() {
